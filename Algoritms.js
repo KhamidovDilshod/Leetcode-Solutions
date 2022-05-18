@@ -38,3 +38,17 @@ const simple = (value) => {
 // const test = memoization(1000);//=>time 0.11 seconds with
 // const sim = simple(1000);//=>time 0.12 seconds
 /**@author Dilshodbek Hamidov,currently Nobody,17.05.2022 in Davr Bank*/
+
+
+const maxSubArray = (arr, num) => {
+    let maxSum = 0;
+    let tempSum = 0;
+    if (arr.length < num) return null;
+    for (let i = 0; i < num; i++) {
+        tempSum = tempSum - arr[i - num] + arr[i];
+        maxSum = Math.max(maxSum, tempSum);
+    }
+    return maxSum;
+}
+const result = maxSubArray([12, 3, 4, 2, 3, 4, 5, 6, 9, 0, 6, 5, 7, 4, 2, 11, 6], 3);
+console.log(result);

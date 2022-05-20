@@ -1,3 +1,4 @@
+/**LinkedList in typescript by Dilshodbek Khamidov*/
 export class LinkedList {
 	public head: Node;
 	public tail: Node;

@@ -1,4 +1,4 @@
-/**Custom utilities in typescript by Dilshodbek Khamidov*/
+/**Queue<T> in typescript by Dilshodbek Khamidov*/
 
 // Program to implement Queue data structure
 

@@ -1,3 +1,4 @@
+/**Stack<T> in typescript by Dilshodbek Khamidov*/
 class Stack<T> {
 	private items: Array<T> = [];
 
@@ -44,5 +45,4 @@ class Stack<T> {
 		return [...this.items];
 	}
 }
-
 
